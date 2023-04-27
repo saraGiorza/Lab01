@@ -1,24 +1,34 @@
 package it.polito.tdp.Lab01.model;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.LinkedList;
 import java.util.List;
 
 public class Parole {
+	ArrayList<String> paroleLista;
 		
 	public Parole() {
-		//TODO
+		paroleLista = new ArrayList<>();
 	}
 	
 	public void addParola(String p) {
-		//TODO
+		this.paroleLista.add(p);
 	}
 	
 	public List<String> getElenco() {
-		//TODO
-		return null;
+		Collections.sort(this.paroleLista);
+		return paroleLista;
 	}
 	
 	public void reset() {
-		// TODO
+		this.paroleLista.clear();
 	}
+	
+	public void cancella(String s) {
+		this.paroleLista.remove(s);
+	}
+	
+	
 
 }

@@ -43,9 +43,15 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </VBox.margin>
             </TextArea>
+            <TextArea fx:id="esecuzionetxt" prefHeight="100.0" prefWidth="200.0" />
             <Button fx:id="btnReset" mnemonicParsing="false" onAction="#doReset" text="Reset">
                <VBox.margin>
                   <Insets bottom="5.0" left="230.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="cancellaButton" mnemonicParsing="false" onAction="#cancellaParola" text="Cancella">
+               <VBox.margin>
+                  <Insets bottom="15.0" left="225.0" />
                </VBox.margin>
             </Button>
          </children>
